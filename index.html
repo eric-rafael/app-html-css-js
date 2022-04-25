@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./bootstrap/bootstrap.min.css">
+    <title>Eric App</title>
+</head>
+
+<body>
+    <div class="d-flex justify-content-center">
+        <span class="border border-3 p-3 m-2">
+            <form class="mb-3">
+                <div>
+                    <h1 class="d-flex justify-content-center">Login</h1>
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">Nome</label>
+                        <input class="form-control" id="exampleFormControlInput1">
+                      </div>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">E-mail</label>
+                    <input type="email" class="form-control w-40 p-1" id="exampleInputEmail1"
+                        aria-describedby="emailHelp" />
+                    <div id="emailHelp" class="form-text">Nunca compartilharemos seus dados com ninguém.</div>
+                </div>
+                <div class="mb-3">
+                    <label  for="exampleInputPassword1" class="form-label">Senha</label>
+                    <input type="password" class="form-control w-40 p-1" id="exampleInputPassword1" />
+                </div>
+                <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1" />
+                    <label class="form-check-label" for="exampleCheck1">Lembre-me</label>
+                </div>
+                <div class="d-flex justify-content-between px-2">
+                    <button onclick="entrar()" type="submit" class="btn btn-primary fs-4">Entrar</button>
+                    <button onclick="cadastrar()" type="submit" class="btn btn-secondary fs-4">Cadastrar</button>
+                </div>
+            </form>
+        </span>
+    </div>
+    <script src="./bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="./js/localStorage.js"></script>
+</body>
+
+</html>
